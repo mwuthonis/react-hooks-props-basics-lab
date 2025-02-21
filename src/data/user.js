@@ -9,4 +9,6 @@ const user = {
   },
 };
 
+console.log("User Data:", user);
+
 export default user;

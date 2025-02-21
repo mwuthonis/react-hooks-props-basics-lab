@@ -33,6 +33,8 @@ test("passes 'bio' to <About> as a prop", () => {
 
 test("passes 'github' to <Links> as a prop, via <About>", () => {
   render(<App />);
+  screen.debug();
+  
   const a = screen.queryByText(user.links.github);
   expect(a).toBeInTheDocument();
   expect(a.tagName).toEqual("A");
